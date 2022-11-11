@@ -1,0 +1,17 @@
+<form method="post">
+    {% csrf_token %}
+  
+    <div class="container">
+      {{form.as_p}}
+      <button type="submit">Login</button>
+    
+    </div>
+  
+
+</form>
+<div>
+    {% for message in messages %}
+    <h3>{{ message }}</h3>
+    {% endfor %}
+  
+  </div>
